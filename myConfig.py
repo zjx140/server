@@ -5,8 +5,8 @@ import os
 # 通用参数
 #===================================
 # 摄像头ID
-#CameraID = 0
-CameraID = r'./video/rawvideo8.avi'
+CameraID = 0
+#CameraID = r'./video/rawvideo8.avi'
 #CameraID =r'../video/real5.avi'
 # CameraID =r'../testdata/test1597556718.57631_movedown.avi'
 # CameraID =r'C:\Users\Haibo\Desktop\手势数据\王海枫\背景复杂_室内光线不好时.avi' # 肤色范围偏移特别厉害，Cb阈值需要上调
