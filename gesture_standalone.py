@@ -9,7 +9,6 @@ from sklearn.externals import joblib
 from myMapDemo import baiduMap
 import numpy as np
 from threading import Lock,Thread
-import json
 import time
 import socket
 import cv2

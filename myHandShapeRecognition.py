@@ -1,7 +1,6 @@
 from myGlobalVariables import *
 from myCommonModules import *
 import myFourierDescriptor as fd
-#from .myHandDNN import handDNN
 
 
 # 手形识别
@@ -160,19 +159,19 @@ def handShapeRecog(handContour, handsvm=None, hand=None, collectHandData=None):
 #             handPosition = (sum_a / k, sum_b / k)
 #     return handShape, confidence, handPosition, colorhand
 
-def handShapeRecogbyDNN(currentframe, hand_model):
-    handShape = ""
-    confidence = 0.96
-    # handPosition = (-1, -1)
-    handKeyPoints = hand_model.getHandKeyPoints(currentframe) #手部关键点
-    handShapes = hand_model.gesture(handKeyPoints) #手形list
-    #colorhand = hand_model.visKeyPoints(np.copy(currentframe), handKeyPoints) #识别后的可视化图像（关键点连线）
-    if len(handShapes) == 0: #手形数组没有数据直接返回
-        return handShape, confidence #, colorhand
-    else: #若存在手形则等于第一个元素，若含有多个每加一个置信度减少0.01
-        handShape = handShapes[0]
-        confidence = 1 - (len(handShapes) - 1) * 0.01
-    return handShape, confidence #, colorhand
+# def handShapeRecogbyDNN(currentframe, hand_model):
+#     handShape = ""
+#     confidence = 0.96
+#     # handPosition = (-1, -1)
+#     handKeyPoints = hand_model.getHandKeyPoints(currentframe) #手部关键点
+#     handShapes = hand_model.gesture(handKeyPoints) #手形list
+#     #colorhand = hand_model.visKeyPoints(np.copy(currentframe), handKeyPoints) #识别后的可视化图像（关键点连线）
+#     if len(handShapes) == 0: #手形数组没有数据直接返回
+#         return handShape, confidence #, colorhand
+#     else: #若存在手形则等于第一个元素，若含有多个每加一个置信度减少0.01
+#         handShape = handShapes[0]
+#         confidence = 1 - (len(handShapes) - 1) * 0.01
+#     return handShape, confidence #, colorhand
 
 # 手指计数
 # 输入：

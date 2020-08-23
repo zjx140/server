@@ -3,7 +3,6 @@ from myConfig import *
 import asyncio
 import websockets
 import functools
-import dlib
 import time
 from sklearn.externals import joblib
 from threading import Lock, Thread
