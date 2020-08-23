@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="zjx140@192.168.60.128:22">
+    <serverData>
+      <paths name="zjx140@192.168.60.128:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zjx140/Documents/PycharmProject/server" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
